@@ -10,14 +10,6 @@ React Native, React, Flask, Python.
 
 ## Mockups
 
-![Home Screen](./Image_Assets/Home.png)
-
-![Create Skill](./Image_Assets/CreateSkill.png)
-
-![Expanded Item](./Image_Assets/Expanded.png)
-
-![Sign Up Page](./Image_Assets/SignUp.png)
-
 ## Future Improvements
 
 1. Add Settings
