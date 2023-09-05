@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+    <body>
+        <%- include('../partials/header.ejs') %>
+        <main>
+            <div class='container is-fluid'>
+                <div class='columns'>
+                    <% for(let i = 0; i < animals.length; i++){ %>
+                        <div class='column is-one-fourth showAll'> 
+                            <h3 class='title is-3'><%= animals[i].name %></h3>
+                            <img src='<%= animals[i].img %>'>
+                            <div class='buttons'>
+                                <a href='/animals/<%= animals[i].id %>/edit' class='button is-warning'>Edit</a>
+                                <form action='/animals/<%= animals[i].id %>?_method=DELETE' method='POST'>
+                                    <input type='submit' class='button is-danger' value='Delete'>
+                                </form>
+                            </div> 
+                        </div>
+                    <% } %>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

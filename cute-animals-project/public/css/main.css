@@ -1,0 +1,37 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css";
+
+h1 {
+    text-align: center
+}
+
+.showPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.slide img{
+    height: 50%;
+    width: 50%;
+}
+
+.showAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}

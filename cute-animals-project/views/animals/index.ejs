@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main>
+        <% if(animals != undefined && animals.length >= 3){ %>
+            <h1 class='title is-1'>Featured Animals</h1>
+            <section class='section'>
+                <div class='container'>
+                    <div id='my-carousel' class='carousel'>
+                        <div class='item-1'>
+                            <a href='/animals/<%= animals[animals.length-1].id %>'>
+                                <div class='slide'>
+                                    <h3 class='title is-3'><%= animals[animals.length-1].name%></h3>
+                                    <img src='<%= animals[animals.length-1].img %>'>
+                                    <p>Uploaded by: <%= animals[animals.length-1].username %></p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                        <div class='item-2'>
+                            <a href='/animals/<%= animals[animals.length-2].id %>'>
+                                <div class='slide'>
+                                    <h3 class='title is-3'><%= animals[animals.length-2].name%></h3>
+                                    <img src='<%= animals[animals.length-2].img %>'>
+                                    <p>Uploaded by: <%= animals[animals.length-2].username %></p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class='item-3'>
+                            <a href='/animals/<%= animals[animals.length-3].id %>'>
+                                <div class='slide'>
+                                    <h3 class='title is-3'><%= animals[animals.length-3].name%></h3>
+                                    <img src='<%= animals[animals.length-3].img %>'>
+                                    <p>Uploaded by: <%= animals[animals.length-3].username %></p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.3/dist/js/bulma-carousel.min.js"></script>
+            <!--Code from Bulma Extensions Documentation-->
+            <script>
+                bulmaCarousel.attach('#my-carousel', {
+                    slidesToScroll: 1,
+                    slidesToShow: 1,
+                    infinite: true
+                });
+            </script>
+        <% } %>
+        <div class='center'>
+            <a href='/animals/randomAnimal' class='button is-primary center'>Random Animal</a>
+        </div>
+        <br/>
+        <br/>
+        <h1 class='title is-2'>All Animals</h1>
+        <div class='columns is-multiline is-mobile is vcentered'>
+            <% for(let i = 0; i < animals.length; i ++){ %>
+                    <div class='column is-half showAll'>
+                        <h3 class='title is-3'><%= animals[i].name %></h3>
+                        <a href='/animals/<%= animals[i].id %>' >
+                            <img src='<%= animals[i].img %>' class = 'image is-128x128'>
+                        </a>
+                    </div>
+            <% } %>
+        </div>
+    </main>   
+</body>
+</html>

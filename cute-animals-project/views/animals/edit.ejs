@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <div class='container is-fluid'>
+        <h1 class='title is-1'>Edit Animal</h1>
+        <div class='columns'>
+            <div class='column is-three-fifths is-offset-one-fifth'>
+                <form action='/animals' method='POST'>
+                    <div class='field'>
+                        <label for="name" class='label'>Name</label>
+                        <input type="text" name='name' class='input is-small' value='<%= animal.name %>'>  
+                    </div>
+                    
+                    <div class='field'>
+                        <label for="fluff" class='label'>Fluffiness</label>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="fluff" value='1' <% if(animal.fluff === 1){ %>checked <% } %>>
+                                1
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" name="fluff" value='2' <% if(animal.fluff === 2){ %>checked <% } %>>
+                                2
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" name="fluff"value='3' <% if(animal.fluff === 3){ %>checked <% } %>>
+                                3
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" name="fluff" value='4' <% if(animal.fluff === 4){ %>checked <% } %>>
+                                4
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" name="fluff" value='5' <% if(animal.fluff === 5){ %>checked <% } %>> 
+                                5
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class='field'>
+                        <label for="size" class='label'>Size</label>
+                        <div class="control">
+                            <label class="radio">
+                                <input type="radio" name="size" value='1' <% if(animal.size === 1){ %>checked <% } %>>
+                                1
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" name="size" value='2' <% if(animal.size === 2){ %>checked <% } %>>
+                                2
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" name="size" value='3' <% if(animal.size === 3){ %>checked <% } %>>
+                                3
+                            </label>
+
+                            <label class="radio">
+                                <input type="radio" name="size" value='4' <% if(animal.size === 4){ %>checked <% } %>>
+                                4
+                            </label>
+                            
+                            <label class="radio">
+                                <input type="radio" name="size" value='5' <% if(animal.size === 5){ %>checked <% } %>> 
+                                5
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class='field'>
+                        <label for="img" class='label'>Image SRC</label>
+                        <input type="text" name='img' class='input is-small' value='<%= animal.img %>'>  
+                    </div>
+
+                    <div class='field'>
+                        <label for="type" class='label'>Animal Type</label>
+                        <input type="text" name='type' class='input is-small' value='<%= animal.type %>'>  
+                    </div>
+
+                    <div class='field'>
+                        <label for="credit" class='label'>Credit</label>
+                        <input type="text" name='credit' class='input is-small' value='<%= animal.credit %>'>  
+                    </div>
+        
+                    <input type='submit' name='' value='Submit' class='button is-primary'>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

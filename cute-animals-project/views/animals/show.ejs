@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <main class='showPage'>
+        <h1 class= 'title is-1'><%= animal.name %></h1>
+        <h3 class= 'title is-3'>Fluff Level: <%= animal.fluff %>/5</h3>
+        <h3 class= 'title is-3'>Size: <%= animal.size %>/5</h3>
+        <img src = '<%= animal.img %>'>
+        <p>Image Credit: <%= animal.credit %></p>
+        <p>Uploaded by: <%= animal.username %></p>
+    </main>
+    
+</body>
+<footer>
+</footer>
+</html>

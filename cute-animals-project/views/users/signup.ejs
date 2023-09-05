@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs') %>
+<body>
+    <%- include('../partials/header.ejs') %>
+    <div class='container is-fluid'>
+        <h1 class='title is-1'>New User</h1>
+        <div class='columns'>
+            <div class='column is-three-fifths is-offset-one-fifth'>
+                <form action='/users' method='POST'>
+                    <div class='field'>
+                        <label for="username" class='label'>Username</label>
+                        <input type="text" name='username' class='input is-small'>  
+                    </div>
+                    <div class='field'>
+                        <label for="password" class='label'>Password</label>
+                        <input type="text" name='password' class='input is-small'>  
+                    </div>
+        
+                    <input type='submit' value='Submit' class='button is-primary'>
+                </form>
+                <% if(error) {%>
+                    <p><%= error %></p>
+                <% } %>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
