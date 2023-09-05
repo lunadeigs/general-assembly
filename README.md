@@ -6,6 +6,10 @@ demo showcases can be found on my personal site [here](https://lunadeigs.github.
 (in September of 2023) however each repository has remained untouched beyond small gitignore cleanups and some updates to personal information as I enjoy having
 a record of my process/skill level from this time.
 
+### HTML Micro Games
+
+A collection of two games, Simon Says and Blackjack, that are programmed using html, css, and jQuery. This project was used to test understanding of DOM structure and the ways it can be manipulated through either pure javascript or a framework such as jQuery.
+
 ### Cute Animals Project
 
 A simple express server that serves html through embedded javascript templates. Project was primarily testing understaning of MVC server architecture as well
