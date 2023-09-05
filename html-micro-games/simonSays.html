@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='./css/main.css'>
+    <link rel='stylesheet' href='./css/simonSays.css'>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src='./js/simonSays.js'></script>
+    <script src='./js/home.js'></script>
+    <title>Home</title>
+</head>
+<body>
+    <audio id='greenSound'><source src='./sounds/greenBeep.mp3' type='audio/mpeg'/></audio>
+    <audio id='redSound'><source src='./sounds/redBeep.wav' type='audio/mpeg'/></audio>
+    <audio id='yellowSound'><source src='./sounds/yellowBeep.wav' type='audio/mpeg'/></audio>
+    <audio id='blueSound'><source src='./sounds/blueBeep.wav' type='audio/mpeg'/></audio>
+
+    
+    
+    
+    <header>
+        <nav>
+            <a href='./home.html'>
+                <img src='./Image_Assets/icons/home.png'>
+            </a>
+            <a href='./blackjack.html'><img src='./Image_Assets/icons/blackjackIcon.png'></a>
+            <a href='./simonSays.html'><img src='./Image_Assets/icons/Simon_Says.png'></a> <!--By Creaticca Creative Agency, GB on theNounProject -->
+        </nav>
+    </header>
+    <main>
+        <h1>Simon Says</h1>
+        <br>
+        <h2 id='score'>SCORE:</h2>
+        <div id='container'>
+            <div id='green' class='button'></div>
+            <div id='red' class='button'></div>
+            <div id='yellow' class='button'></div>
+            <div id='blue' class='button'></div>
+            <button id='start' class='glow-on-hover'>Start</button>
+        </div>
+        <h3 id='counter'></h3>
+    </main>
+    <footer>
+        <div id='scoreboard'>
+            <h2>SCOREBOARD</h2>
+            <h3 id='blackjackWins'>Blackjack Wins: 0</h3>
+            <h3 id='simonSaysHigh'>Simon Says High Score: 0</h3>
+        </div>
+        <p>&#169 2021 by Kole Deighan</p>
+    </footer>
+</body>
+</html>

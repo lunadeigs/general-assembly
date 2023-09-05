@@ -1,0 +1,54 @@
+/*Code idea from mitrosin on jsfiddle.com link: http://jsfiddle.net/mitrosin/xb9edv64/*/
+h3 {
+    text-align: center;
+    margin: 50px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#container {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.button {
+    box-shadow: 5px 5px rgba(231, 223, 221, 0.5);
+    margin: 10px;
+}
+
+
+#red {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* border-radius: 0 100px 0 0; */
+}
+
+#green {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    /* border-radius: 100px 0 0 0; */
+}
+
+#blue {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    /* border-radius: 0 0 100px 0; */
+}
+
+#yellow {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    /* border-radius: 0 0 0 100px; */
+}
+

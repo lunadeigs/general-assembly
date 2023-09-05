@@ -1,0 +1,42 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameContainer {
+    width: 800px;
+    height: 800px;
+    background-color: darkgreen;
+    border: 5px solid #A239CA;
+    text-align: center;
+    box-shadow: 5px 10px rgba(162, 57, 202, 0.5);
+
+}
+
+.card {
+    background-color: white;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    margin: 25px;
+}
+
+.cardBack {
+    height: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    margin: 25px;
+}
+
+.cardStack {
+    display: flex;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+}
