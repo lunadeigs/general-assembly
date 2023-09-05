@@ -26,7 +26,7 @@ animals.get('/seed', (req, res) => {
     Animal.create([
         {
             name: 'Bob',
-            username: 'kole',
+            username: 'luna',
             fluff: 4,
             size: 5,
             img: 'https://i1.wp.com/www.dailycal.org/assets/uploads/2019/10/animals_wikimedia_cc-900x580.jpg',
@@ -35,7 +35,7 @@ animals.get('/seed', (req, res) => {
         },
         {
             name: 'Melman',
-            username: 'kole',
+            username: 'luna',
             fluff: 4,
             size: 5,
             img: 'https://static.boredpanda.com/blog/wp-content/uuuploads/cute-baby-animals/cute-baby-animals-2.jpg',
@@ -44,7 +44,7 @@ animals.get('/seed', (req, res) => {
         },
         {
             name: 'Geoffery',
-            username: 'kole',
+            username: 'luna',
             fluff: 4,
             size: 5,
             img: 'https://i.pinimg.com/originals/a6/94/c2/a694c2f6dac7497974c391c7ecb0e337.jpg',
@@ -53,7 +53,7 @@ animals.get('/seed', (req, res) => {
         },
         {
             name: 'Buff',
-            username: 'kole',
+            username: 'luna',
             fluff: 4,
             size: 5,
             img: 'https://pbs.twimg.com/profile_images/704447240216051712/mTel0Q49_400x400.jpg',
